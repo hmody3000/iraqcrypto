@@ -5,14 +5,21 @@
   <script src ="index.js"></script>
 </head>
 <body>
-  <div class="wrapper">
-    <ul class="dynamic-txts">
-      <li><span>قادم قريباً</span></li>
-      <li><span>اسرع من قبل</span></li>
-      <li><span>سهل في الاستخدام</span></li>
-    </ul>
-    <div class="static-txt">الموقع الجديد </div>
-  </div>
+<div id="container">
+    <span id="text1"></span>
+    <span id="text2"></span>
+</div>
+
+<svg id="filters">
+    <defs>
+        <filter id="threshold">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+									0 1 0 0 0
+									0 0 1 0 0
+									0 0 0 255 -140" />
+        </filter>
+    </defs>
+</svg>
 
 
 <style>
