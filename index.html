@@ -43,7 +43,7 @@ body{
   font-weight: 400;
 }
 .wrapper .dynamic-txts{
-  margin-left: 15px;
+  margin-right: 15px;
   height: 90px;
   line-height: 90px;
   overflow: hidden;
@@ -70,19 +70,19 @@ body{
 .dynamic-txts li span::after{
   content: "";
   position: absolute;
-  left: 0;
+  right: 0;
   height: 100%;
   width: 100%;
   background: #343F4F;
-  border-left: 2px solid #FC6D6D;
+  border-right: 2px solid #FC6D6D;
   animation: typing 3s steps(10) infinite;
 }
 @keyframes typing {
   40%, 60%{
-    left: calc(100% + 30px);
+    right: calc(100% + 30px);
   }
   100%{
-    left: 0;
+    right: 0;
   }
 }
-</style></body></html> 
+</style></body></html>
